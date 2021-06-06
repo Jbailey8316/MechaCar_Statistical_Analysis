@@ -7,12 +7,11 @@ library(dplyr)
 mpg_data_df <- read.csv("resources/MechaCar_mpg.csv")
 
 #Linear Regression
-lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
+model1 <- lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
      ground_clearance + AWD, data=mpg_data_df)
 
 #summarize linear regression
-summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + 
-             ground_clearance + AWD, data=mpg_data_df))
+summary(model1)
 
 # Deliverable 2
 
